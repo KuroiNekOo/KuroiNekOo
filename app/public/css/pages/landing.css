@@ -123,6 +123,7 @@ body > main > section article > span {
   padding: 8px;
   border-radius: 5px;
   display: block;
+  cursor: pointer;
 }
 
 body > main > section article > span[aria-label="tag-news"] {
