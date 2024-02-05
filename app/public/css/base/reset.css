@@ -4,6 +4,7 @@
 
 html {
   font-family: var(--font-fam);
+  font-size: 1em;
 }
 
 h1,
@@ -23,13 +24,9 @@ a {
   color: black;
 }
 
-button {
-  padding: 8px 20px; /*top/bottom left/right*/
-  border: none;
-}
-
-button:hover {
-  cursor: pointer;
+p {
+  margin: 0;
+  padding: 0;
 }
 
 ul {

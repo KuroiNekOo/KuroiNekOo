@@ -1,0 +1,179 @@
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--header-background-color);
+}
+
+body > section {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  /* CHEMIN CENTER CENTER/COUVERTURE (object-fit) */
+  background: url(../../../../images/nicole.jpg) center center/cover;
+  box-shadow: 3px 1px 9px -1px rgba(0, 0, 0, 0.86);
+  -webkit-box-shadow: 3px 1px 9px -1px rgba(0, 0, 0, 0.86);
+  -moz-box-shadow: 3px 1px 9px -1px rgba(0, 0, 0, 0.86);
+  z-index: 3;
+}
+
+body > section > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 30px 20px;
+  /* background-color: var(--article-background-opacity); */
+  background: rgba(204, 200, 200, 1);
+  background: linear-gradient(
+    146deg,
+    rgba(204, 200, 200, 1) 0%,
+    rgba(255, 255, 255, 0.1) 80%
+  );
+  background: -webkit-linear-gradient(
+    146deg,
+    rgba(204, 200, 200, 1) 0%,
+    rgba(255, 255, 255, 0.1) 80%
+  );
+  background: -moz-linear-gradient(
+    146deg,
+    rgba(204, 200, 200, 1) 0%,
+    rgba(255, 255, 255, 0.1) 80%
+  );
+}
+
+body > section > article > h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+body > section > article > h2 > span {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #ffffffd2;
+}
+
+body > section > article > p {
+  text-align: end;
+  font-size: 1.3rem;
+  width: 80%;
+  color: #ffffffd2;
+  line-height: 1.5;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.8px;
+}
+
+body > main {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+body > main > aside {
+  height: 8vh;
+  background-color: var(--header-background-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: solid 2px var(--article-border-color);
+}
+
+body > main > aside > h2 {
+  margin-left: 40px;
+  font-size: 2.2rem;
+}
+
+body > main > section {
+  height: 92vh;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  animation: showBloc 3s ease-in-out forwards;
+}
+
+body > main > section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 50%;
+  height: 650px;
+  border-bottom: solid 2px var(--article-border-color);
+  border-right: solid 2px var(--article-border-color);
+  padding: 30px;
+}
+
+body > main > section article > span {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 5px;
+  display: block;
+}
+
+body > main > section article > span[aria-label="tag-news"] {
+  background-color: var(--news-tag-color);
+}
+
+body > main > section article > span[aria-label="tag-team"] {
+  background-color: var(--team-tag-color);
+}
+
+body > main > section article > span[aria-label="tag-work"] {
+  background-color: var(--work-tag-color);
+}
+
+body > main > section article > h2 {
+  font-size: 2rem;
+}
+
+body > main > section article > aside {
+  display: flex;
+}
+
+body > main > section article > aside > figure {
+  display: flex;
+  align-items: center;
+}
+
+body > main > section article > aside > figure > img {
+  height: 32px;
+  width: 32px;
+}
+
+body > main > section article > aside > figure > figcaption {
+  margin-left: 15px;
+}
+
+body > main > section article > aside > figure > figcaption > p {
+  font-weight: bold;
+}
+
+body > main > section article > aside > figure > figcaption > p > span {
+  font-weight: normal;
+  color: #655f5f;
+}
+
+body > main > section article > p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+body > main > section > article > a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--article-link);
+  text-decoration: underline;
+}
+
+body > main > section > article > a:hover {
+  color: var(--article-link-hover);
+  text-decoration: underline;
+}

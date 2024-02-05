@@ -1,4 +1,11 @@
 :root {
   --font-fam: "Poppins", sans-serif;
-  --primary-color: rgb(0, 149, 80);
+  --article-link: #007bff;
+  --article-link-hover: #0056b3;
+  --header-background-color: #f9f9f9;
+  --article-border-color: #eaeaea;
+  --article-background-opacity: rgba(204, 200, 200, 0.3);
+  --work-tag-color: #0766f0;
+  --team-tag-color: #dc5e53;
+  --news-tag-color: #98dc62;
 }
