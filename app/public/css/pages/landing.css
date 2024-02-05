@@ -67,6 +67,12 @@ body > section > article > p {
   line-height: 1.5;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
   letter-spacing: 0.8px;
+  transition: transform 400ms ease-in-out;
+}
+
+body > section > article > p:hover {
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
 body > main {
@@ -82,6 +88,7 @@ body > main > aside {
   justify-content: flex-start;
   align-items: center;
   border-bottom: solid 2px var(--article-border-color);
+  animation: downHeader 1s ease-in-out forwards;
 }
 
 body > main > aside > h2 {
@@ -94,7 +101,7 @@ body > main > section {
   overflow: auto;
   display: flex;
   flex-wrap: wrap;
-  animation: showBloc 3s ease-in-out forwards;
+  animation: upMain 1s ease-in-out forwards;
 }
 
 body > main > section article {
